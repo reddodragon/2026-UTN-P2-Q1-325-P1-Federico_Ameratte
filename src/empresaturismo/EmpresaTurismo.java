@@ -11,18 +11,18 @@ public class EmpresaTurismo {
         vehiculos = new ArrayList<>();
     }
     
-        public void agregarNave(Vehiculo nave) {
-        if (vehiculos.contains(nave)) {
+    public void agregarVehiculo(Vehiculo vehiculo) {
+        if (vehiculos.contains(vehiculo)) {
             System.out.println("Ya existe una nave con ese nombre y anio de lanzamiento.");
         } else {
-            vehiculos.add(nave);
-            System.out.println("Nave agregada correctamente.");
+            vehiculos.add(vehiculo);
+            System.out.println("Vehiculo agregado correctamente.");
         }
     }
 
-    public void mostrarNaves() {
+    public void mostraVehiculo() {
         if (vehiculos.isEmpty()) {
-            System.out.println("No hay naves registradas.");
+            System.out.println("No hay vehiculos registradas.");
         } else {
             for (Vehiculo vehiculo : vehiculos) {
                 vehiculo.mostrarInformacion();
